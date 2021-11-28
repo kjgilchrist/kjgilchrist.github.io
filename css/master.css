@@ -1,38 +1,40 @@
 /*
-Includes: Palette, Scroll bar, Navigation, Footer
+Includes: EVERYTHING IT IS SO MUCH
 Notes:
 Oswald Font Family includes weights 200-700
 */
 
 /* CSS HEX */
 :root {
---off-white: #f5f5f5;
 --rich-black: #0e0c0d;
---roman-silver: #7d8491;
---light-gray: #cacecb;
---beige: #f1f5e0;
---corn: #f6e851;
---minion-yellow: #f4e333;
---straw: #dfd568;
+--dark-gray: #42383d;
+--gray: #97878e;
+--light-gray: #d0c8cc;
+--off-white: #f5f5f5;
+--corn: #f7eb64;
 }
 
 /* Universal */
 *{
   scroll-behavior: smooth;
-  font-family: 'Oswald', san-serif;
 }
 * a:link{
-  color: var(--rich-black);
+  color: var(--gray);
   text-decoration: none;
 }
 * a:hover, a:focus, a:visited:hover{
+  cursor: pointer;
   color: var(--corn);
   text-decoration: line-through;
-  text-decoration-color: var(--corn);
+  text-decoration-color: var(--rich-black);
   transition: all 0.5s ease;
 }
 * a:visited{
-  color: var(--rich-black);
+  color: var(--gray);
+}
+.inactive a{
+  pointer-events: none;
+  cursor: default;
 }
 * button{
   outline: none;
@@ -65,7 +67,7 @@ section{
   background: var(--off-white);
   border-radius: 10px;
   margin: 0 0 30px 0;
-  padding-bottom: 15px;
+  padding: 15px 0 15px 0;
 }
 section .container{
   display: grid;
@@ -84,7 +86,6 @@ section .container{
 .content{
   width: 100%;
   background: #fff;
-  margin-top: 15px;
 }
 .hline{
   width: 25%;
@@ -122,11 +123,13 @@ section .container{
 
 /* Text Options */
 h1{
+  font-family: 'Oswald', san-serif;
   grid-column-start: span 4;
   font-size: 25px;
   font-weight: 500;
   display: flex;
   justify-content: flex-start;
+  padding: 0 15px 0 15px;
 }
 h1 span{
   position: relative;
@@ -142,36 +145,46 @@ h1 span::after{
   bottom: 0;
 }
 h2{
+  font-family: 'Oswald', san-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
   padding: 0 15px 0 15px;
 }
 h3{
+  font-family: 'Oswald', san-serif;
   font-size: 18px;
   font-weight: 300;
   text-align: left;
   padding: 0 15px 0 15px;
 }
 p{
-  font-size: 16px;
+  font-family: 'Helvetica';
+  font-size: 15px;
   font-weight: 300;
   text-align: justify;
   padding: 0 15px 0 15px;
 }
-.descriptive p{
-  padding: 0 40px 0 0;
+li, li p{
+  padding-left: 0;
+  padding-right: 15px;
+}
+.descriptive h1, .descriptive h2,
+.descriptive h3, .descriptive p{
+  padding: 0;
 }
 .tools {
-  color: var(--roman-silver);
   font-size: 14px;
   font-weight: 400;
   text-align: left;
-  padding: 0;
 }
-ul{
+ul, ol{
+  font-family: 'Oswald', san-serif;
   font-size: 16px;
   font-weight: 300;
+}
+a:link{
+  font-family: 'Oswald', san-serif;
 }
 
 /* Custom Scroll Bar */
@@ -199,6 +212,10 @@ ul{
   font-size: 15px;
   border-radius: 25%;
 }
+.scroll-button a:hover,
+.scroll-button a:focus{
+  color: var(--rich-black);
+}
 
 /* Image & Icon Styling */
 img{
@@ -208,6 +225,11 @@ img{
   border-radius: 5px;
   padding: 15px;
   margin: auto;
+}
+iframe{
+  border: none;
+  object-position: center;
+  object-fit: cover;
 }
 .icon a{
   color: var(--rich-black);
@@ -317,7 +339,7 @@ nav .menu-btn{
 Core Element Styling
 */
 
-/* Slideshow Styling - Thank you, Neill */
+/* Slideshow - Thank you, Neill */
 /* Currently only supports ONE slideshow per page */
 .portSlides {
   display: none;
@@ -331,10 +353,7 @@ Core Element Styling
 .caption {
   flex-shrink: 1.5;
   text-align: justify;
-  margin-right: 15px;
-}
-.proj-title {
-  font-weight: 500;
+  margin: 0 15px;
 }
 .proj-emph {
   color: var(--rich-black);
@@ -366,11 +385,11 @@ Core Element Styling
   align-items: center;
   margin: auto;
 }
-.prev, .next {
+.prev, .next{
   cursor: pointer;
   padding: 10px 0;
-  color: var(--rich-black);
-  -webkit-text-stroke: 1px var(--rich-black);
+  color: var(--light-gray);
+  -webkit-text-stroke: 1px var(--light-gray);
   font-weight: bold;
   font-size: 40px;
   transition: 0.5s ease;
@@ -378,26 +397,33 @@ Core Element Styling
   user-select: none;
   margin: 0 15px;
 }
-.prev a:hover, .next a:hover{
+.prev:hover, .prev:focus,
+.next:hover, .next:focus{
   text-decoration: none;
+  -webkit-text-stroke: 1px var(--rich-black);
 }
-.next {
+.next:hover{
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+.prev:visited, .next:visited{
+  color: var(--light-gray);
+  -webkit-text-stroke: 1px var(--light-gray);
 }
 .dot {
   cursor: pointer;
   height: 5px;
   width: 15px;
   margin: 0px 2px;
-  background-color: var(--rich-black);
-  border: 1px var(--rich-black) solid;
+  background-color: var(--light-gray);;
+  border: 1px var(--light-gray) solid;
   border-radius: 0;
   display: inline-block;
   transition: background-color 0.5s ease;
 }
 .active, .dot:hover {
   background-color: var(--corn);
+  border: 1px var(--rich-black) solid;
 }
 .fade {
   -webkit-animation: 'fade' 0.5s;
@@ -427,19 +453,19 @@ Core Element Styling
       100% {opacity: 1;}
     }
 
-/* Hoverbox Styling */
+/* Hoverbox */
 .box{
   display: grid;
-  grid-template-rows: 25% 25% 50%;
-  border-radius: 5px;
+  grid-template-rows: 50% 50%;
   text-align: center;
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
+  padding: 15px 0;
 }
-.box:hover{
+.box:hover, .box:focus{
   background: var(--corn);
   transition: all 0.5s ease;
 }
@@ -447,18 +473,83 @@ Core Element Styling
   grid-row: 1;
   font-size: 20px;
   color: var(--rich-black);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 .box .title{
-  font-size: 16px;
-  font-weight: 400;
   grid-row: 2;
-}
-.box .description{
-  grid-row: 3;
+  text-align: center;
 }
 
-/* Footer CSS */
+/* Code iframes */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #333;
+  background-color: #eee;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #eee;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+.example {
+    overflow: auto;
+    zoom: 1;
+    margin: 5px 15px 15px 15px;
+    border: 1px var(--light-gray) solid;
+    min-height: 400px;
+}
+.example pre {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    padding: 1em;
+}
+.example-container {
+    width: 400;
+    height: auto;
+    float: left;
+}
+.cntrl {
+    margin-top: 15px;
+}
+.cntrl span{
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    padding: 5px;
+    background: var(--light-gray);
+    color: var(--rich-black);
+    cursor: pointer;
+}
+.play{
+    margin-left: 15px;
+}
+.example iframe{
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
 footer{
   padding: 0 0 30px 0;
   display: flex;
