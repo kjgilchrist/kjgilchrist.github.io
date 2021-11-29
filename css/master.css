@@ -1,5 +1,5 @@
 /*
-Includes: EVERYTHING IT IS SO MUCH
+Includes: Palette, Scroll bar, Navigation, Footer
 Notes:
 Oswald Font Family includes weights 200-700
 */
@@ -18,23 +18,24 @@ Oswald Font Family includes weights 200-700
 *{
   scroll-behavior: smooth;
 }
-* a:link{
+a:link{
   color: var(--gray);
   text-decoration: none;
 }
-* a:hover, a:focus, a:visited:hover{
+a:hover, a:focus, a:visited:hover{
   cursor: pointer;
   color: var(--corn);
-  text-decoration: line-through;
+  text-decoration: underline;
   text-decoration-color: var(--rich-black);
   transition: all 0.5s ease;
 }
-* a:visited{
+a:visited{
   color: var(--gray);
 }
-.inactive a{
+.inactive{
   pointer-events: none;
-  cursor: default;
+  opacity: 0.5;
+  text-decoration: line-through;
 }
 * button{
   outline: none;
@@ -174,6 +175,7 @@ li, li p{
   padding: 0;
 }
 .tools {
+  font-style: italic;
   font-size: 14px;
   font-weight: 400;
   text-align: left;
@@ -219,12 +221,23 @@ a:link{
 
 /* Image & Icon Styling */
 img{
-  max-width: 400px;
   height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 15px;
   margin: auto;
+}
+.tiny-img{
+  max-width: 50px;
+}
+.sm-img{
+  max-width: 200px;
+}
+.med-img{
+  max-width: 400px;
+}
+.lrg-img{
+  max-width: 600px;
 }
 iframe{
   border: none;
@@ -276,7 +289,6 @@ nav .navbar{
 nav .navbar .branding{
   grid-column: 1;
   display: flex;
-  gap: 15px;
   justify-content: flex-end;
   align-items: center;
   margin: auto;
@@ -335,6 +347,8 @@ nav .menu-btn{
   display: none;
 }
 
+/* General Use Classes */
+
 /*
 Core Element Styling
 */
@@ -344,6 +358,7 @@ Core Element Styling
 .portSlides {
   display: none;
   justify-content: center;
+  padding: 15px 15px 0 15px;
   gap: 5px;
   flex-wrap: none;
   align-content: center;
@@ -353,7 +368,8 @@ Core Element Styling
 .caption {
   flex-shrink: 1.5;
   text-align: justify;
-  margin: 0 15px;
+  margin-left: 15px;
+  margin-right: 45px;
 }
 .proj-emph {
   color: var(--rich-black);
@@ -367,8 +383,9 @@ Core Element Styling
   margin: auto;
 }
 .imgSlide {
-  padding: 15px 15px 0 15px;
-  width: 100%;
+  border: 1px var(--rich-black) solid;
+  border-radius: 10px;
+  padding: 0;
   max-width: 800px;
   height: 450px;
   object-fit: contain;
@@ -593,6 +610,9 @@ footer{
   }
   .portSlides{
     flex-wrap: wrap;
+  }
+  .caption{
+    margin-right: 15px;
   }
 }
 
