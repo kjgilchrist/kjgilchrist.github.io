@@ -5,7 +5,7 @@ let currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
         link.className += ' .current-link';
     }
 */
-
+/*
 // Sticky Navigation Menu & Up Button
 //let nav = document.querySelector("nav");
 let scrollBtn = document.getElementByClassName("scroll-button");
@@ -22,6 +22,7 @@ window.onScroll = function checkScroll() {
     scrollBtn.style.display="none";
   }
 }
+*/
 
 // Side Navigation Menu
 let navBar = document.querySelector(".navbar .menu");
