@@ -15,160 +15,66 @@
 <!-- Body -->
 <body id="top">
 
-  <!-- Move to Top Button -->
-  <div class="scroll-button">
-    <a href="#top"><i class="fas fa-arrow-up"></i></a>
-  </div>
-
   <!-- Start Main Grid -->
-  <div class="main">
+  <main>
 
   <!-- Navigation Menu -->
   <nav>
     <div class="navbar">
       <div class="branding">
         <img class="logo tiny-img" src="library/logo.png">
-        <div class="initials"><a href="index.html">kjg</a></div>
+        <div class="initials"><a class="currentLink" href="index.html">kjg</a></div>
       </div>
       <div class="menu-btn"><i class="fas fa-bars"></i></div>
       <div class="menu">
         <ul class="menu">
-          <li><a href="#work">work</a></li>
-          <li><a href="#other">other</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#resume">resume</a></li>
+          <li><a class="currentLink" href="index.html">home</a></li>
+          <li><a href="work.html">work</a></li>
+          <li><a class="inactive" href="other.html">other</a></li>
+          <li><a href="about.html">about</a></li>
           <div class="cancel-btn"><i class="fas fa-times"></i></div>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Hello -->
+  <section class="hello" id="hello">
+    <div class="container">
+      <div class="landing four-col one-row">
+        <div class="land-text word">engineer</div>
+        <div class="land-text word">educator</div>
+        <div class="land-text word">designer</div>
+      </div>
+    </div>
+  </section>
+
   <!-- News -->
   <section class="news" id="news">
     <div class="container">
-      <div class="content four-col">
-        <p><b>News:</b> Currently Under Construction - Some things may not work as intended.</p>
+      <div class="header four-col">
+        <p><b>Update:</b> This site is currently Under Construction - some things may not work as intended or be disabled. Thank you for your patience!</p>
       </div>
     </div>
   </section>
-
-  <!-- Work Slideshow -->
-  <section class="work" id="work">
-    <div class="container">
-      <h1><span>work</span></h1>
-      <div class="content four-col">
-        <div class="slideshow">
-          <div class="portSlides fade" style="display: block;">
-            <img class="imgSlide" src="library/ambiosense.png">
-            <div class="caption descriptive">
-              <h3 class="proj-title">Ambiosense</h3>
-              <p>An in-home sensory experience utilizing projection mapping to help support mental health during a pandemic. Take a visual, auditory and olfactory journey to an atmosphere of your choice without ever leaving your home!</p>
-              <p class="tools">Figma, JS, InDesign, Dimension, Photoshop</p>
-              <p class="proj-emph"><a class="inactive" href="">READ ></a></p>
-            </div>
-          </div>
-          <div class="portSlides fade">
-            <img class="imgSlide" src="library/">
-            <div class="caption descriptive">
-              <h3 class="proj-title">Building This Site</h3>
-              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-              <p class="proj-emph"><a class="inactive" href="">READ ></a></p>
-            </div>
-          </div>
-          <div class="slidenav">
-            <a class="prev fas fa-caret-left" tabindex="8" onclick="plusSlides(-1)"></a>
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-            <a class="next fas fa-caret-right" tabindex="9" onclick="plusSlides(1)"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Other -->
-   <section class="other" id="other">
-    <div class="container">
-      <h1><span>other</span></h1>
-      <div class="content one-col">
-        <div class="box">
-          <div class="icon"><i class="fas fa-pen"></i></div>
-          <h3 class="title">Writing</h3>
-        </div>
-      </div>
-      <div class="content one-col">
-        <div class="box">
-          <div class="icon"><i class="fas fa-music"></i></div>
-          <h3 class="title">Music</h3>
-        </div>
-      </div>
-      <div class="content one-col">
-        <div class="box">
-          <div class="icon"><i class="fas fa-palette"></i></div>
-          <h3 class="title">Art</h3>
-        </div>
-      </div>
-      <div class="content one-col">
-        <div class="box">
-          <div class="icon"><i class="fas fa-heart"></i></div>
-          <h3 class="title">Passion Projects</h3>
-        </div>
-      </div>
-    </div>
-   </section>
-
-   <!-- About -->
-   <section class="about" id="about">
-     <div class="container">
-       <h1><span>about</span></h1>
-       <div class="content one-col">
-         <img class="med-img" src="library/about.png">
-       </div>
-       <div class="content three-col">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, porro veritatis pariatur, nobis voluptatem ipsum repellat nemo quisquam error reprehenderit recusandae odio vel, suscipit. Voluptas mollitia accusantium quaerat aspernatur labore dolorum placeat ipsa sint nam perspiciatis eos consectetur veritatis debitis, quis aliquam unde sed maiores sit! Hic molestiae optio iste iure earum amet nostrum quaerat facere quae veniam maiores harum iusto aperiam vel inventore illo voluptatibus voluptates quo impedit voluptatum error vitae, omnis praesentium? Aperiam nulla non, nesciunt fuga rem perferendis alias et, temporibus, distinctio culpa unde a laborum libero ducimus. Facilis veniam sit praesentium, voluptatibus sint maxime iusto eaque.</p>
-         <button>button</button>
-       </div>
-     </div>
-   </section>
-
-  <!-- Interactive Resume? -->
-    <section class="resume" id="resume">
-      <div class="container">
-        <h1><span>resume</span></h1>
-        <div class="content one-col">
-          <div class="topic">HTML</div>
-          <div class="per">90%</div>
-        </div>
-        <div class="content one-col">
-          <div class="topic">CSS</div>
-          <div class="per">90%</div>
-        </div>
-        <div class="content one-col">
-          <div class="topic">JS</div>
-          <div class="per">90%</div>
-        </div>
-        <div class="content one-col">
-          <div class="topic">Whatever Else</div>
-          <div class="per">90%</div>
-        </div>
-      </div>
-    </section>
 
 <!-- Footer -->
 <footer>
   <div class="icon"><a href="cu-coursework.html"><i class="fas fa-chalkboard"></i></a></div>
-  <div class="icon"><a href="#"><i class="fas fa-envelope"></i></a></div>
-  <div class="icon"><a href="#"><i class="fab fa-github"></i></a></div>
-  <div class="icon"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+  <div class="icon"><a class="inactive" href="#"><i class="fas fa-envelope"></i></a></div>
+  <div class="icon"><a class="inactive" href="#"><i class="fab fa-github"></i></a></div>
+  <div class="icon"><a href="https://www.linkedin.com/in/katjgil/"><i class="fab fa-linkedin-in"></i></a></div>
+  <div class="icon scroll-button"><a href="#top"><i class="fas fa-arrow-up"></i></a></div>
 </footer>
 
   <!-- End Main -->
-  </div>
+</main>
 
   <!-- Run Scripts at the End, Otherwise Errors Abound! -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/nav.js"></script>
   <script src="js/slideshow.js"></script>
+  <script src="js/rotate-word.js"></script>
 
 </body>
 </html>
