@@ -8,16 +8,18 @@ let currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
 
 // Sticky Navigation Menu & Up Button
 //let nav = document.querySelector("nav");
-let scrollBtn = document.querySelector(".scroll-button a");
-//console.log(scrollBtn);
-//let val;
-window.onscroll = function() {
-  if(document.documentElement.scrollTop > 20){
+let scrollBtn = document.getElementByClassName("scroll-button");
+window.onScroll = function checkScroll() {
+    var div = document.getElementById('div');
+    var hs = div.scrollWidth > div.clientWidth;
+    var vs = div.scrollHeight > div.clientHeight;
+    console.log(vs);
+  if(vs){
     //nav.classList.add("sticky");
-    scrollBtn.style.display = "block";
-  }else{
+    scrollBtn.style.display="block";
+  }else if(!vs){
     //nav.classList.remove("sticky");
-    scrollBtn.style.display = "none";
+    scrollBtn.style.display="none";
   }
 }
 
@@ -44,4 +46,4 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
   });
-}
+};
