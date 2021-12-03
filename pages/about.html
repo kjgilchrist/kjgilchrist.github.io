@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/master.css">
+<link rel="stylesheet" type="text/css" href="../css/other.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This is the tab title -->
+  <title>kjg</title>
+
+  <!-- Grabbing Header (Nav) & Footer -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>$(function(){$("#header").load("../pages/header.html");$("#footer").load("../pages/footer.html");});</script>
+</head>
+
+<!-- Body -->
+<body id="about">
+  <!-- Start Main Grid -->
+  <main>
+  <!-- Navigation Menu -->
+  <div id="header"></div>
+
+   <!-- About -->
+   <section class="about" id="about">
+     <div class="container">
+       <div class="empty one-col"></div>
+       <div class="content one-col">
+         <p>Currently, I am a Graduate Student at CU Boulder ATLAS Institute, studying Creative Technology and Design via the Creative Industries track. My goal is to combine my passion for education and design, and bring it into my work.</p>
+         <p>Previously, I was a Secondary Education Teacher in both science and mathematics, with a background in Chemistry and Applied Mathematics from Colorado School of Mines.</p>
+         <a class="a-button" href="../library/brand/gilchrist-resume.pdf" download="kjgilchrist-all-brand">Download Resume</a>
+       </div>
+       <div class="content one-col">
+         <img class="med-img" src="../library/about.png">
+       </div>
+       <div class="empty one-col"></div>
+     </div>
+   </section>
+
+  <!-- Interactive Resume? -->
+    <section class="inactive resume" id="resume">
+      <div class="container">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="hline"></div>
+    <div id="footer"></div>
+  <!-- End Main -->
+  </main>
+  <!-- Run Scripts at the End, Otherwise Errors Abound! -->
+  <script src="../js/nav.js"></script>
+  <script src="../js/slideshow.js"></script>
+
+</body>
+</html>
