@@ -1,10 +1,12 @@
 // Current Page - I see what it is trying to do, but...
-/*
-let currentLinks = document.querySelectorAll('a[href="'+document.URL+'"]');
-    currentLinks.for(currentLink) {
-        link.className += ' .current-link';
-    }
-*/
+$(function () {
+        $('nav .navbar .menu li').each(function () {
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('currentLink');
+            }
+        });
+    });
+
 /*
 // Sticky Navigation Menu & Up Button
 //let nav = document.querySelector("nav");
