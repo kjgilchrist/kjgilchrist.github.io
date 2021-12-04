@@ -96,7 +96,7 @@ section{
 /* Subsection Building Blocks */
 .landing{
   width: 100%;
-  height: 700px;
+  height: 650px;
 }
 .header{
   width: 100%;
@@ -155,7 +155,6 @@ section{
   font-family: 'Oswald', san-serif;
   font-size: 50px;
   font-weight: 300;
-  padding: 300px 0 ;
 }
 h1{
   grid-column: span 4;
@@ -292,6 +291,14 @@ iframe{
   grid-column: 2;
   font-size: 20px;
 }
+.yellow{
+  color: var(--kjg-yellow);
+  -webkit-transform:rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 
 /* Navigation Styling */
 nav{
@@ -371,15 +378,14 @@ nav .menu-btn{
 /* Word Animation - Again, thank you Neill.*/
 #identifier {
   display: inline-block;
-  width: 75px;
   text-align: center;
 }
 
 #identifier::after {
-  content: "designer";
+  content: "a designer";
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 40px;
+  font-weight: 300;
+  font-size: 50px;
 
   -webkit-animation: 'swap' 10s infinite;
    -moz-animation: 'swap' 10s infinite;
@@ -388,99 +394,99 @@ nav .menu-btn{
         animation: 'swap' 10s infinite;
 }
     @-webkit-keyframes swap {
-      0% {content: "designer"; opacity: 1;}
+      0% {content: " a designer"; opacity: 1;}
       5% {opacity: 0;}
       15% {opacity: 0;}
       20% {opacity: 1;}
-      25% {content: "engineer"; opacity: 1;}
+      25% {content: " an engineer"; opacity: 1;}
       30% {opacity: 0;}
       40% {opacity: 0;}
       45% {opacity: 1;}
-      50% {content: "educator"; opacity: 1;}
+      50% {content: " an educator"; opacity: 1;}
       55% {opacity: 0;}
       65% {opacity: 0;}
       70% {opacity: 1;}
-      75% {content: "coder"; opacity: 1;}
+      75% {content: " a creative coder"; opacity: 1;}
       80% {opacity: 0;}
       90% {opacity: 0;}
       95% {opacity: 1;}
-      100% {content: "designer"; opacity: 1;}
+      100% {content: " a designer"; opacity: 1;}
     }
     @-moz-keyframes swap {
-      0% {content: "designer"; opacity: 1;}
+      0% {content: " a designer"; opacity: 1;}
       5% {opacity: 0;}
       15% {opacity: 0;}
       20% {opacity: 1;}
-      25% {content: "engineer"; opacity: 1;}
+      25% {content: " an engineer"; opacity: 1;}
       30% {opacity: 0;}
       40% {opacity: 0;}
       45% {opacity: 1;}
-      50% {content: "educator"; opacity: 1;}
+      50% {content: " an educator"; opacity: 1;}
       55% {opacity: 0;}
       65% {opacity: 0;}
       70% {opacity: 1;}
-      75% {content: "coder"; opacity: 1;}
+      75% {content: " a creative coder"; opacity: 1;}
       80% {opacity: 0;}
       90% {opacity: 0;}
       95% {opacity: 1;}
-      100% {content: "designer"; opacity: 1;}
+      100% {content: " a designer"; opacity: 1;}
     }
     @-ms-keyframes swap {
-      0% {content: "designer"; opacity: 1;}
+      0% {content: " a designer"; opacity: 1;}
       5% {opacity: 0;}
       15% {opacity: 0;}
       20% {opacity: 1;}
-      25% {content: "engineer"; opacity: 1;}
+      25% {content: " an engineer"; opacity: 1;}
       30% {opacity: 0;}
       40% {opacity: 0;}
       45% {opacity: 1;}
-      50% {content: "educator"; opacity: 1;}
+      50% {content: " an educator"; opacity: 1;}
       55% {opacity: 0;}
       65% {opacity: 0;}
       70% {opacity: 1;}
-      75% {content: "coder"; opacity: 1;}
+      75% {content: " a creative coder"; opacity: 1;}
       80% {opacity: 0;}
       90% {opacity: 0;}
       95% {opacity: 1;}
-      100% {content: "designer"; opacity: 1;}
+      100% {content: " a designer"; opacity: 1;}
     }
     @-o-keyframes swap {
-      0% {content: "designer"; opacity: 1;}
+      0% {content: " a designer"; opacity: 1;}
       5% {opacity: 0;}
       15% {opacity: 0;}
       20% {opacity: 1;}
-      25% {content: "engineer"; opacity: 1;}
+      25% {content: " an engineer"; opacity: 1;}
       30% {opacity: 0;}
       40% {opacity: 0;}
       45% {opacity: 1;}
-      50% {content: "educator"; opacity: 1;}
+      50% {content: " an educator"; opacity: 1;}
       55% {opacity: 0;}
       65% {opacity: 0;}
       70% {opacity: 1;}
-      75% {content: "coder"; opacity: 1;}
+      75% {content: " a creative coder"; opacity: 1;}
       80% {opacity: 0;}
       90% {opacity: 0;}
       95% {opacity: 1;}
-      100% {content: "designer"; opacity: 1;}
+      100% {content: " a designer"; opacity: 1;}
     }
     @keyframes swap {
-      0% {content: "designer"; opacity: 1;}
+      0% {content: " a designer"; opacity: 1;}
       5% {opacity: 0;}
       15% {opacity: 0;}
       20% {opacity: 1;}
-      25% {content: "engineer"; opacity: 1;}
+      25% {content: " an engineer"; opacity: 1;}
       30% {opacity: 0;}
       40% {opacity: 0;}
       45% {opacity: 1;}
-      50% {content: "educator"; opacity: 1;}
+      50% {content: " an educator"; opacity: 1;}
       55% {opacity: 0;}
       65% {opacity: 0;}
       70% {opacity: 1;}
-      75% {content: "coder"; opacity: 1;}
+      75% {content: " a creative coder"; opacity: 1;}
       80% {opacity: 0;}
       90% {opacity: 0;}
       95% {opacity: 1;}
-      100% {content: "designer"; opacity: 1;}
+      100% {content: " a designer"; opacity: 1;}
     }
 
 /*Collapsible Text*/
