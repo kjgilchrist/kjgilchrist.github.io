@@ -368,30 +368,120 @@ nav .menu-btn{
   display: none;
 }
 
-/* Word Animation */
-/* Currently only supports ONE animation per page */
-.word {
-  position: absolute;
-  right: 50%;
-  opacity: 0;
-}
-.letter {
+/* Word Animation - Again, thank you Neill.*/
+#identifier {
   display: inline-block;
-  position: relative;
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px;
+  width: 75px;
+  text-align: center;
 }
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+#identifier::after {
+  content: "designer";
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+
+  -webkit-animation: 'swap' 10s infinite;
+   -moz-animation: 'swap' 10s infinite;
+    -ms-animation: 'swap' 10s infinite;
+     -o-animation: 'swap' 10s infinite;
+        animation: 'swap' 10s infinite;
 }
-.letter.behind {
-  transform: rotateX(-90deg);
-}
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+    @-webkit-keyframes swap {
+      0% {content: "designer"; opacity: 1;}
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      20% {opacity: 1;}
+      25% {content: "engineer"; opacity: 1;}
+      30% {opacity: 0;}
+      40% {opacity: 0;}
+      45% {opacity: 1;}
+      50% {content: "educator"; opacity: 1;}
+      55% {opacity: 0;}
+      65% {opacity: 0;}
+      70% {opacity: 1;}
+      75% {content: "coder"; opacity: 1;}
+      80% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "designer"; opacity: 1;}
+    }
+    @-moz-keyframes swap {
+      0% {content: "designer"; opacity: 1;}
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      20% {opacity: 1;}
+      25% {content: "engineer"; opacity: 1;}
+      30% {opacity: 0;}
+      40% {opacity: 0;}
+      45% {opacity: 1;}
+      50% {content: "educator"; opacity: 1;}
+      55% {opacity: 0;}
+      65% {opacity: 0;}
+      70% {opacity: 1;}
+      75% {content: "coder"; opacity: 1;}
+      80% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "designer"; opacity: 1;}
+    }
+    @-ms-keyframes swap {
+      0% {content: "designer"; opacity: 1;}
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      20% {opacity: 1;}
+      25% {content: "engineer"; opacity: 1;}
+      30% {opacity: 0;}
+      40% {opacity: 0;}
+      45% {opacity: 1;}
+      50% {content: "educator"; opacity: 1;}
+      55% {opacity: 0;}
+      65% {opacity: 0;}
+      70% {opacity: 1;}
+      75% {content: "coder"; opacity: 1;}
+      80% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "designer"; opacity: 1;}
+    }
+    @-o-keyframes swap {
+      0% {content: "designer"; opacity: 1;}
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      20% {opacity: 1;}
+      25% {content: "engineer"; opacity: 1;}
+      30% {opacity: 0;}
+      40% {opacity: 0;}
+      45% {opacity: 1;}
+      50% {content: "educator"; opacity: 1;}
+      55% {opacity: 0;}
+      65% {opacity: 0;}
+      70% {opacity: 1;}
+      75% {content: "coder"; opacity: 1;}
+      80% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "designer"; opacity: 1;}
+    }
+    @keyframes swap {
+      0% {content: "designer"; opacity: 1;}
+      5% {opacity: 0;}
+      15% {opacity: 0;}
+      20% {opacity: 1;}
+      25% {content: "engineer"; opacity: 1;}
+      30% {opacity: 0;}
+      40% {opacity: 0;}
+      45% {opacity: 1;}
+      50% {content: "educator"; opacity: 1;}
+      55% {opacity: 0;}
+      65% {opacity: 0;}
+      70% {opacity: 1;}
+      75% {content: "coder"; opacity: 1;}
+      80% {opacity: 0;}
+      90% {opacity: 0;}
+      95% {opacity: 1;}
+      100% {content: "designer"; opacity: 1;}
+    }
 
 /*Collapsible Text*/
 .collapsible{
