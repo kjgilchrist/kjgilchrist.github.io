@@ -197,6 +197,9 @@ p{
   border-radius: 5px;
   padding: 10px 15px;
 }
+.tab {
+  margin-left: 30px;
+}
 li, li p{
   padding-left: 0;
   padding-right: 15px;
@@ -786,7 +789,7 @@ footer{
   .caption{
     margin-right: 15px;
   }
-  .imgSlide, .huge-img{
+  .imgSlide, .huge-img, .lrg-img{
     max-width: 350px;
     height: auto;
   }
