@@ -18,17 +18,17 @@ Oswald Font Family includes weights 200-700
   scroll-behavior: smooth;
 }
 a:link{
-  color: var(--kjg-gray);
+  color: var(--kjg-dark-gray);
   text-decoration: none;
 }
 a:hover, a:focus, a:visited:hover{
   cursor: pointer;
-  color: var(--kjg-yellow);
+  /* color: var(--kjg-yellow); */
   text-decoration: 1px var(--kjg-black) underline;
   transition: all 0.5s ease;
 }
 a:visited{
-  color: var(--kjg-gray);
+  color: var(--kjg-dark-gray);
 }
 .inactive{
   pointer-events: none;
@@ -244,11 +244,15 @@ a:link{
 }
 .scroll-button{
   display: none;
+  position: fixed;
+  right: 2.5%;
+  bottom: 5%;
 }
 
 /* Image & Icon Styling */
 img{
   height: auto;
+  object-position: center;
   object-fit: cover;
   border-radius: 10px;
   padding: 15px;
@@ -276,6 +280,7 @@ iframe{
   border: none;
   object-position: center;
   object-fit: cover;
+  padding: 15px;
 }
 .icon a{
   color: var(--kjg-black);
@@ -311,6 +316,12 @@ iframe{
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+/* Video */
+.vimeo{
+  width: 100%;
+  height: auto;
 }
 
 /* Navigation Styling */
@@ -656,18 +667,29 @@ nav .menu-btn{
   padding: 15px 0;
 }
 .box:hover, .box:focus{
-  background: var(--kjg-yellow);
+  background: var(--kjg-light-gray);
   transition: all 0.5s ease;
 }
-.box .icon{
+.box .title{
   grid-row: 1;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+.box .subtitle{
+  grid-row: 2;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+.box .icon{
+  grid-row: 2;
   font-size: 20px;
   color: var(--kjg-black);
   transition: all 0.5s ease;
 }
-.box .title{
-  grid-row: 2;
-  text-align: center;
+.box a:hover{
+  color: #fff;
 }
 
 /* Code iframes */
@@ -769,6 +791,9 @@ footer{
 }
 
 @media (max-width: 1000px) {
+  .empty{
+    display: none;
+  }
   .one-col{
     grid-column-start: span 2;
   }
