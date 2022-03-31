@@ -2,20 +2,30 @@
 <nav>
   <div class="navbar">
     <div class="branding">
-      <div class="initials"><a href="../index.html">katherine j gilchrist</a></div>
+      <div class="initials">katherine j gilchrist</div>
     </div>
     <div class="menu-btn"><i class="fas fa-bars"></i></div>
     <div class="menu">
       <ul class="menu">
-        <li><a href="../index.html">home</a></li>
-        <li><a href="../pages/work.html">work</a></li>
-        <li><a class="inactive" href="../pages/other.html">other</a></li>
-        <li><a href="../pages/about.html">about</a></li>
+        <li><a id="home-link" href="../index.html">home</a></li>
+        <li><a id="other-link" class="inactive" href="../pages/other.html">other</a></li>
+        <li><a id="about-link" class="inactive" href="../pages/about.html">about</a></li>
         <div class="cancel-btn"><i class="fas fa-times"></i></div>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- Removing current page from navigation using ID of body -->
+<script>
+  $(document).ready(function() {
+    var pageId = $(document.body).attr('id');
+    console.log(pageId);
+    pageId += '-link';
+    console.log(pageId);
+    $('#' + pageId).addClass('currentLink');
+  });
+</script>
 
 <div class="vline"></div>
 
