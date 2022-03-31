@@ -77,8 +77,10 @@ a:visited{
 
 /* Main Container - Limits everything to 90% of viewport width */
 main{
-  width: 80vw;
+  width: 1000px;
+  position: relative;
   margin: auto;
+  background: var(--kjg-light-gray);
 }
 .vline{
   position: fixed;
@@ -92,17 +94,19 @@ main{
 /* Section + Subcontainers */
 section{
   display: block;
-  border-radius: 10px;
-  margin: 0;
-  padding: 15px 0 15px 0;
-  /* background: var(--kjg-yellow); */
+  margin: auto;
+  padding: 30px 15px;
+  align-items: center;
+  align-content: center;
+  background: var(--kjg-dark-gray);
 }
 .container{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 49% 49%;
   grid-auto-rows: auto;
-  gap: 15px 15px;
+  gap: 2% 2%;
   margin: 0 15px 0 15px;
+  background: var(--kjg-off-white);
 }
 
 /* Subsection Building Blocks */
