@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="../css/master.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Grabbing Header (Nav) & Footer -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>$(function(){$("#header").load("../pages/header.html");$("#footer").load("../pages/footer.html");});</script>
+</head>
+
+<!-- Body -->
+<body id="home">
+
+  <div class="vline"></div>
+
+  <!-- Start Main Grid -->
+  <main>
+  <!-- Navigation Menu -->
+  <div id="header"></div>
+
+  <!-- Work Section -->
+  <section class="work" id="work">
+    <div class="container">
+      <a id="work-1" class="one-col h-box inactive" href="../pages/about.html">
+        <img class="h-image" src="../library/placeholder.jpg">
+        <div class="h-text">
+          <h3 class="h-title">TITLE</h3>
+          <p class="h-description">Description of the project goes here.</p>
+          <p class="h-description tools">Tags</p>
+        </div>
+      </a>
+      <a id="work-2" class="one-col h-box inactive" href="../pages/about.html">
+        <img class="h-image" src="../library/ambiosense.png">
+        <div class="h-text">
+          <h3 class="h-title">AMBIOSENSE</h3>
+          <p class="h-description">An in-home sensory experience support mental health during a pandemic. Take a visual, auditory and olfactory journey to an atmosphere of your choice without ever leaving your home!</p>
+          <p class="h-description tools">Design</p>
+        </div>
+      </a>
+      <a id="work-1" class="one-col h-box inactive" href="../pages/about.html">
+        <img class="h-image" src="../library/placeholder.jpg">
+        <div class="h-text">
+          <h3 class="h-title">TITLE</h3>
+          <p class="h-description">Description of the project goes here.</p>
+          <p class="h-description tools">Tags</p>
+        </div>
+      </a>
+      <a id="work-1" class="one-col h-box" href="../pages/work-template.html">
+        <img class="h-image" src="../library/placeholder.jpg">
+        <div class="h-text">
+          <h3 class="h-title">TEMPLATE WORK PAGE</h3>
+          <p class="h-description">Description of the project goes here, but this is a template. Check it out!</p>
+          <p class="h-description tools">Tags</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <!-- End Main -->
+  </main>
+  <!-- Run Scripts at the End, Otherwise Errors Abound! -->
+
+</body>
+</html>
