@@ -124,9 +124,8 @@ section{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  background-color: var(--kjg-accent-3);
-  */
+  margin: auto; */
+  background-color: var(--kjg-accent-1);
 }
 
 /* Section Specific Styling */
@@ -144,7 +143,6 @@ section{
 }
 .content {
   width: 100%;
-  background-color: var(--kjg-accent-1);
 }
 .one-col{
   grid-column: auto / span 1;
