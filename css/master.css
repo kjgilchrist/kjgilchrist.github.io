@@ -249,6 +249,7 @@ nav .navbar{
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  background: var(--kjg-accent-3);
 }
 nav .navbar .branding{
   grid-column: 1;
