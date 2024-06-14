@@ -263,7 +263,7 @@ nav{
   transition: all 0.3s ease;
   margin: auto
   /* margin: 0 0.9375em; */
-  background-color: #fff;
+  background-color: var(--kjg-light);
 }
 nav .navbar{
   display: grid;
@@ -308,7 +308,7 @@ nav .navbar .menu li{
 }
 nav .navbar .currentLink{
   pointer-events: none;
-  text-decoration: 3px var(--kjg-accent-1) underline;
+  text-decoration: 0.1875em var(--kjg-accent-1) underline;
 }
 .navbar .menu a:hover{
   color: var(--kjg-accent-2);
