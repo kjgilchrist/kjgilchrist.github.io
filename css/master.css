@@ -413,13 +413,13 @@ img{
 .box .title{
   grid-row: 1;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', san-serif;
   font-weight: 500;
 }
 .box .subtitle{
   grid-row: 2;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', san-serif;
   font-weight: 300;
 }
 .box .icon{
