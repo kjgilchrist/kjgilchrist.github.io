@@ -9,7 +9,7 @@ Oswald Font Family includes weights 200-700
 --kjg-black: #0e0c0d;
 --kjg-dark-gray: #42383d;
 --kjg-gray: #97878e;
---kjg-light-gray: #d0c8cc;
+--kjg-light-gray: #d0c8cc;e
 --kjg-off-white: #f5f5f5;
 --kjg-accent-1: #f7eb64; */
 
@@ -32,7 +32,7 @@ Oswald Font Family includes weights 200-700
   text-align: center;
   font-size: 1em;
   font-weight: 500;
-  background: var(--kjg-dark);
+  background: var(--kjg-accent-1);
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
@@ -40,20 +40,20 @@ Oswald Font Family includes weights 200-700
   margin: 0 0.9375em 0.9375em 0.9375em;
 }
 * button:hover, button:focus{
-  background-color: var(--kjg-accent-1);
+  background-color: var(--kjg-accent-2);
   color: var(--kjg-dark);
 }
 
 /* Hyperlinks */
 a:link{
   font-family: 'Oswald', san-serif;
-  color: var(--kjg-dark);
+  color: var(--kjg-accent-3);
   text-decoration: none;
 }
 a:hover, a:focus, a:visited:hover{
   cursor: pointer;
-  /* color: var(--kjg-yellow); */
-  /* text-decoration: 1px var(--kjg-dark) underline; */
+  color: var(--kjg-dark); */
+  text-decoration: 0.0625em var(--kjg-dark) underline;
   transition: all 0.5s ease;
 }
 a:visited{
@@ -104,7 +104,7 @@ main{
   right: 8%;
   height: 90%;
   width: 0.0625em;
-  background: var(--kjg-dark);
+  background: var(--kjg-accent-3);
 }
 
 /* Section + Subcontainers */
@@ -143,7 +143,7 @@ section{
   margin: auto;
   margin-bottom: 0.9375em;
   height: 0.1875em;
-  background: var(--kjg-accent-1);
+  background: var(--kjg-accent-2);
 }
 .one-col{
   grid-column: span 1;
@@ -223,7 +223,7 @@ ul, ol{
     transition: all 0.3s ease;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--roman-silver);
+    background: var(--kjg-accent-1);
 }
 .scroll-button{
   display: none;
@@ -285,7 +285,7 @@ nav .navbar .currentLink{
   text-decoration: 3px var(--kjg-accent-1) underline;
 }
 .navbar .menu a:hover{
-  color: var(--kjg-accent-1);
+  color: var(--kjg-accent-2);
 }
 
 /* Side Navigation Menu Button */
@@ -320,7 +320,7 @@ img{
 
 /* Miscellaneous */
 .yellow{
-  background: var(--kjg-accent-1);
+  background: var(--kjg-accent-2);
 }
 .rotate{
   -webkit-transform: rotate(-45deg);
@@ -438,7 +438,7 @@ img{
 .h-box:hover img{
   transition: all 0.5s ease-in;
   transition: all 0.5s ease-out;
-  box-shadow: 0 0 0.3125em var(--kjg-accent-1);
+  box-shadow: 0 0 0.3125em var(--kjg-accent-3);
   opacity: 0.1;
 }
 .h-box:hover .h-text{
@@ -530,7 +530,7 @@ footer{
   font-size: 1.25em;
 }
 .icon a:hover{
-  color: var(--kjg-accent-1);
+  color: var(--kjg-accent-3);
 }
 
 /* Responsive Media Query */
