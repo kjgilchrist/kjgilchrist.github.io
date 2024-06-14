@@ -333,7 +333,6 @@ nav .menu-btn{
 
 /* Image & Icon Styling */
 img{
-  width: 100%;
   height:auto;
   position: absolute;
   top: 50%;
@@ -434,15 +433,13 @@ img{
   transition: all 0.5s ease;
 }
 .box a:hover{
-  color: #fff;
+  color: var(--kjg-light);
 }
 
 /* Hoverimage */
 .h-box {
-  /*
   width: 49%;
   margin: 0.5% 0.5% 0 0.5%;
-  */
   position: relative;
   text-align: center;
   align-content: center;
@@ -464,11 +461,11 @@ img{
 }
 .h-title{
   background: transparent;
-  color: #000;
+  color: var(--kjg-dark);
 }
 .h-description{
   background: transparent;
-  color: #000;
+  color: var(--kjg-dark);
 }
 .h-box:hover img{
   transition: all 0.5s ease-in;
