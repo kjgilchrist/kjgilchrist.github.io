@@ -154,9 +154,6 @@ section{
 .two-col{
   grid-column: auto / span 2;
 }
-div{
-  width: 100%;
-}
 .one-col-div{
   padding: 0.625em;
   width: 80%;
