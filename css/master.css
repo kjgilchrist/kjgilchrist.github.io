@@ -96,7 +96,7 @@ main{
   width: 90%;
   position: relative;
   margin: auto;
-  /* background: var(--kjg-dark); */
+  background: var(--kjg-accent-2);
 }
 .vline{
   position: absolute;
@@ -114,7 +114,7 @@ section{
   padding: 1.875em 0.9375em;
   align-items: center;
   align-content: center;
-  /* background: var(--kjg-dark); */
+  background: var(--kjg-accept-1);
 }
 .container{
   display: grid;
@@ -129,14 +129,14 @@ section{
   align-items: center;
   margin: auto;
   */
-  /* background: var(--kjg-light); */
+  background: var(--kjg-accent-3);
 }
 
 /* Section Specific Styling */
 
 /* Subsection Building Blocks */
 .header{
-  background-color: #fff;
+  background-color: --kjg-light;
 }
 .hline{
   width: 100%;
@@ -144,6 +144,9 @@ section{
   margin-bottom: 0.9375em;
   height: 0.1875em;
   background: var(--kjg-accent-2);
+}
+.content {
+	width: 100%;
 }
 .one-col{
   grid-column: auto / span 1;
