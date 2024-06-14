@@ -158,10 +158,24 @@ div{
   width: 100%;
 }
 .one-col-div{
+  padding: 0.625em;
+  width: 80%;
+  -moz-column-count: 1;
+  -moz-column-gap: 0;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0;
   column-count: 1;
+  column-gap: 0;
 }
 .two-col-div{
+  padding: 0.625em;
+  width: 80%;
+  -moz-column-count: 2;
+  -moz-column-gap: 0.625em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 0.625em;
   column-count: 2;
+  column-gap: 0.625em;
 
 }
 .flex-box{
