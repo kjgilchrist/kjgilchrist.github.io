@@ -291,6 +291,7 @@ nav .navbar .branding .logo{
   font-family: 'Oswald', san-serif;
   font-size: 1em;
   font-weight: 300;
+  padding: 0.375em 0;
 }
 nav .navbar .menu{
   grid-column: 2;
