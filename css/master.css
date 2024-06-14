@@ -118,9 +118,6 @@ section{
 }
 .container{
   display: grid;
-  grid-template-columns: 49% 49%;
-  grid-auto-rows: auto;
-  gap: 2% 2%;
   margin: 0 0.9375em 0 0.9375em;
   /*
   display: flex;
@@ -153,6 +150,9 @@ section{
 }
 .two-col{
   grid-column: auto / span 2;
+  grid-template-columns: 49% 49%;
+  grid-auto-rows: auto;
+  gap: 2% 2%;
 }
 .one-col-div{
   padding: 0.625em;
