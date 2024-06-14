@@ -335,9 +335,10 @@ nav .menu-btn{
 img{
   width: 100%;
   height:auto;
-  object-position: center;
-  object-fit: contain;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .sm-img{
   width: 25%;
