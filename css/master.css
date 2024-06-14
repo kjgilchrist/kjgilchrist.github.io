@@ -117,16 +117,16 @@ section{
   background-color: var(--kjg-accept-1);
 }
 .container{
-  /*
   display: grid;
   margin: 0 0.9375em 0 0.9375em;
   padding: auto
-  */
+  /*
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: auto;
+  */
   background-color: var(--kjg-accent-1);
 }
 
@@ -148,9 +148,6 @@ section{
 }
 .one-col{
   grid-column: auto / span 1;
-  grid-template-columns: 70%;
-  grid-auto-rows: auto;
-  gap: 15% 15%;
 }
 .two-col{
   grid-column: auto / span 2;
