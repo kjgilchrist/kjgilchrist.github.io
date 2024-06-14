@@ -434,8 +434,8 @@ img{
 
 /* Hoverimage */
 .h-box {
-/*   width: 49%;
-  margin: 0.5% 0.5% 0 0.5%; */
+/*width: 49%; */
+  margin: 0.5% 0.5% 0 0.5%;
   position: relative;
   text-align: center;
   align-content: center;
