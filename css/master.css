@@ -144,6 +144,7 @@ section{
 }
 .content {
   width: 100%;
+  background-color: var(--kjg-accent-1);
 }
 .one-col{
   grid-column: auto / span 1;
