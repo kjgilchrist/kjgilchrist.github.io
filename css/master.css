@@ -128,8 +128,8 @@ section{
   justify-content: center;
   align-items: center;
   margin: auto;
-  */
   background-color: var(--kjg-accent-3);
+  */
 }
 
 /* Section Specific Styling */
@@ -240,7 +240,8 @@ nav{
   position: relative;
   z-index: 998;
   transition: all 0.3s ease;
-  margin: 0 0.9375em;
+  margin: auto
+  /* margin: 0 0.9375em; */
   background-color: #fff;
 }
 nav .navbar{
