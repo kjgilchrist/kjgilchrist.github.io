@@ -85,7 +85,7 @@ body{
 
 /* Main Container - Limits everything to 90% of viewport width */
 main{
-  width: 1000px;
+  width: 90%;
   position: relative;
   margin: auto;
   /* background: var(--kjg-light-gray); */
