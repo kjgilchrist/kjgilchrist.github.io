@@ -154,6 +154,9 @@ section{
 .two-col{
   grid-column: auto / span 2;
 }
+.two-col-div{
+	column-count: 2;
+}
 .flex-box{
   display: flex;
   justify-content: center;
