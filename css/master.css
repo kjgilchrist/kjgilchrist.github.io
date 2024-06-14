@@ -146,6 +146,9 @@ section{
 }
 .one-col{
   grid-column: auto / span 1;
+  grid-template-columns: 70%;
+  grid-auto-rows: auto;
+  gap: 15% 15%;
 }
 .two-col{
   grid-column: auto / span 2;
