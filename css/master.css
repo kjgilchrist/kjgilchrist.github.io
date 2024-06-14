@@ -96,7 +96,7 @@ main{
   width: 90%;
   position: relative;
   margin: auto;
-  background: var(--kjg-accent-2);
+  background-color: var(--kjg-accent-2);
 }
 .vline{
   position: absolute;
@@ -104,7 +104,7 @@ main{
   right: 8%;
   height: 90%;
   width: 0.0625em;
-  background: var(--kjg-accent-3);
+  background-color: var(--kjg-accent-3);
 }
 
 /* Section + Subcontainers */
@@ -114,7 +114,7 @@ section{
   padding: 1.875em 0.9375em;
   align-items: center;
   align-content: center;
-  background: var(--kjg-accept-1);
+  background-color: var(--kjg-accept-1);
 }
 .container{
   display: grid;
@@ -129,7 +129,7 @@ section{
   align-items: center;
   margin: auto;
   */
-  background: var(--kjg-accent-3);
+  background-color: var(--kjg-accent-3);
 }
 
 /* Section Specific Styling */
@@ -143,7 +143,7 @@ section{
   margin: auto;
   margin-bottom: 0.9375em;
   height: 0.1875em;
-  background: var(--kjg-accent-2);
+  background-color: var(--kjg-accent-2);
 }
 .content {
 	width: 100%;
@@ -221,7 +221,7 @@ ul, ol{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--kjg-dark);
+    background-color: var(--kjg-dark);
     border-radius: 0.75em;
     transition: all 0.3s ease;
 }
@@ -249,7 +249,7 @@ nav .navbar{
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  background: var(--kjg-accent-3);
+  background-color: var(--kjg-accent-3);
 }
 nav .navbar .branding{
   grid-column: 1;
@@ -327,7 +327,7 @@ img{
 
 /* Miscellaneous */
 .yellow{
-  background: var(--kjg-accent-2);
+  background-color: var(--kjg-accent-2);
 }
 .rotate{
   -webkit-transform: rotate(-45deg);
