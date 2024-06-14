@@ -326,6 +326,9 @@ img{
 .vimeo{
   width: 100%;
   height: auto;
+  object-position: center;
+  object-fit: contain;
+  margin: auto;
 }
 
 /*Collapsible Text*/
@@ -523,7 +526,6 @@ footer{
 }
 
 /* Responsive Media Query */
-
 @media (max-width: 1000px) {
   .empty{
     display: none;
