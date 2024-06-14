@@ -146,10 +146,10 @@ section{
   background: var(--kjg-accent-2);
 }
 .one-col{
-  grid-column: span 1;
+  grid-column: auto / span 1;
 }
 .two-col{
-  grid-column: span 2;
+  grid-column: auto / span 2;
 }
 .flex-box{
   display: flex;
@@ -313,6 +313,9 @@ img{
   object-position: center;
   object-fit: contain;
   margin: auto;
+}
+.med-img {
+	width: 25%;
 }
 .round-frame{
   border-radius: 50%;
