@@ -10,7 +10,7 @@ Oswald Font Family includes weights 200-700
 --kjg-gray: #97878e;
 --kjg-light-gray: #d0c8cc;
 --kjg-off-white: #f5f5f5;
---kjg-yellow: #f7eb64;
+--kjg-accent-1: #f7eb64; /* Yellow */
 }
 
 /* Universal */
@@ -32,7 +32,7 @@ Oswald Font Family includes weights 200-700
   margin: 0 15px 15px 15px;
 }
 * button:hover, button:focus{
-  background-color: var(--kjg-yellow);
+  background-color: var(--kjg-accent-1);
   color: var(--kjg-black);
 }
 
@@ -66,7 +66,7 @@ a:visited{
   margin: 0 15px 15px 15px;
 }
 .a-button:hover, .a-button:focus{
-  background-color: var(--kjg-yellow);
+  background-color: var(--kjg-accent-1);
   color: var(--kjg-black);
 }
 .inactive{
@@ -135,7 +135,7 @@ section{
   margin: auto;
   margin-bottom: 15px;
   height: 3px;
-  background: var(--kjg-yellow);
+  background: var(--kjg-accent-1);
 }
 .one-col{
   grid-column: span 1;
@@ -274,10 +274,10 @@ nav .navbar .menu li{
 }
 nav .navbar .currentLink{
   pointer-events: none;
-  text-decoration: 3px var(--kjg-yellow) underline;
+  text-decoration: 3px var(--kjg-accent-1) underline;
 }
 .navbar .menu a:hover{
-  color: var(--kjg-yellow);
+  color: var(--kjg-accent-1);
 }
 
 /* Side Navigation Menu Button */
@@ -312,7 +312,7 @@ img{
 
 /* Miscellaneous */
 .yellow{
-  background: var(--kjg-yellow);
+  background: var(--kjg-accent-1);
 }
 .rotate{
   -webkit-transform: rotate(-45deg);
@@ -427,7 +427,7 @@ img{
 .h-box:hover img{
   transition: all 0.5s ease-in;
   transition: all 0.5s ease-out;
-  box-shadow: 0 0 5px var(--kjg-yellow);
+  box-shadow: 0 0 5px var(--kjg-accent-1);
   opacity: 0.1;
 }
 .h-box:hover .h-text{
@@ -519,7 +519,7 @@ footer{
   font-size: 1.25em;
 }
 .icon a:hover{
-  color: var(--kjg-yellow);
+  color: var(--kjg-accent-1);
 }
 
 /* Responsive Media Query */
