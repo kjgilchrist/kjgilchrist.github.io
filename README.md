@@ -1,3 +1,3 @@
 # kjgilchrist.github.io
 
-My personal portfolio page.
+Personal portfolio, currently under construction!
