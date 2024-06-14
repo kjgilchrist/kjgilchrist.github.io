@@ -281,6 +281,7 @@ nav .navbar .branding{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 0.375em 0;
 }
 nav .navbar .branding .logo{
   font-size: 1.25em;
@@ -291,7 +292,6 @@ nav .navbar .branding .logo{
   font-family: 'Oswald', san-serif;
   font-size: 1em;
   font-weight: 300;
-  padding: 0.375em 0;
 }
 nav .navbar .menu{
   grid-column: 2;
@@ -340,7 +340,7 @@ nav .menu-btn{
 img{
   width: 100%;
   height:auto;
-  padding: auto;
+  position: center;
 }
 .sm-img{
   width: 25%;
