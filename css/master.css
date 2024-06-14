@@ -146,7 +146,7 @@ section{
   background-color: var(--kjg-accent-2);
 }
 .content {
-	width: 100%;
+  width: 100%;
 }
 .one-col{
   grid-column: auto / span 1;
@@ -154,8 +154,15 @@ section{
 .two-col{
   grid-column: auto / span 2;
 }
+div{
+  width: 100%;
+}
+.one-col-div{
+  column-count: 1;
+}
 .two-col-div{
-	column-count: 2;
+  column-count: 2;
+
 }
 .flex-box{
   display: flex;
