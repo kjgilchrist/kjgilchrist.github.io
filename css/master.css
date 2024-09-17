@@ -118,6 +118,7 @@ section{
 }
 .container{
   display: grid;
+  width: 10%;
   margin: 0 0.9375em 0 0.9375em;
   padding: auto
   /*
