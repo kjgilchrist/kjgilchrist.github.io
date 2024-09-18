@@ -118,7 +118,6 @@ section{
 }
 .container{
   display: grid;
-  grid-template-columns: 30% 30% 30%;
   margin: 0 0.9375em 0 0.9375em;
   padding: auto
   /*
@@ -439,10 +438,8 @@ img{
 
 /* Hoverimage */
 .h-box {
-  /*
   width: 49%;
   margin: 0.5% 0.5% 0 0.5%;
-  */
   position: relative;
   text-align: center;
   align-content: center;
