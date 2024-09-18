@@ -439,14 +439,14 @@ img{
 /* Hoverimage */
 .h-box {
   width: 49%;
-  margin: 0.5% 0.5% 0 0.5%;
+  margin: 0.5% 0.5% 0.5% 0.5%;
   position: relative;
   text-align: center;
   align-content: center;
   align-items: center;
 }
 .h-box img{
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
