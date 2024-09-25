@@ -1,58 +1,159 @@
-<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../css/master.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS, compiled Javascript, for BS5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Latest minified JQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Linked Additionals -->
+        <link rel="stylesheet" type="text/css" href="../css/master.css">
+        <!-- Linked Fonts -->
+        <div data-include="font"></div>
+        <!-- Defined Shapes -->
+        <div data-include="symbol"></div>
+    </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Grabbing Header (Nav) & Footer -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-  <script>$(function(){$("#header").load("../pages/header.html");$("#footer").load("../pages/footer.html");});</script>
-</head>
-
-<!-- Body -->
-<body id="home">
-
-  <!-- <div class="vline"></div> -->
-
-  <!-- Start Main Grid -->
-  <main>
-  <!-- Navigation Menu -->
-  <div id="header"></div>
-
-  <!-- Work Section -->
-  <section class="work" id="work">
-    <div class="container">
-      <a id="work-1" class="one-col h-box" href="../pages/about.html">
-        <img class="h-image" src="../library/placeholder.jpg">
-        <div class="h-text">
-          <h3 class="h-title">TITLE</h3>
-          <p class="h-description">Description of the project goes here.</p>
-          <p class="h-description tools">Tags</p>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar sticky-top navbar-expand-md">
+            <div class="container-fluid mx-auto d-flex align-items-center">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">KJG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible Area -->
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Work</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link disabled" href="#">About</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link disabled" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text me-auto text-warning border border-warning rounded-pill px-3">
+                        This website is currently under construction.
+                    </span>
+                    <ul class="navbar-nav me-right mb-0 mb-lg-0">
+                        <!-- Mode Dropdown -->
+                        <li class="nav-item dropdown h-100">
+                            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                            <svg width="16" height="16" class="bi my-1 theme-icon-active" fill="currentColor"><use href="#circle-half"></use></svg>
+                            <!-- Mode -->
+                            <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                <svg width="16" height="16" class="bi me-2 opacity-50" fill="currentColor"><use href="#sun-fill"></use></svg>
+                                Light
+                                <svg class="bi ms-auto d-none" fill="currentColor"><use href="#check2"></use></svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                <svg width="16" height="16" class="bi me-2 opacity-50" fill="currentColor"><use href="#moon-stars-fill"></use></svg>
+                                Dark
+                                <svg class="bi ms-auto d-none" fill="currentColor"><use href="#check2" ></use></svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                                <svg width="16" height="16" class="bi me-2 opacity-50" fill="currentColor"><use href="#circle-half"></use></svg>
+                                Auto
+                                <svg class="bi ms-auto d-none" fill="currentColor"><use href="#check2"></use></svg>
+                                </button>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
         </div>
-      </a>
-      <a id="work-2" class="one-col h-box" href="../pages/work-template.html">
-        <img class="h-image" src="../library/placeholder.jpg">
-        <div class="h-text">
-          <h3 class="h-title">TEMPLATE WORK PAGE</h3>
-          <p class="h-description">Description of the project goes here, but this is a template. Check it out!</p>
-          <p class="h-description tools">Tags</p>
+        <!-- 3x3 -->
+        <div id="3x3cols" class="container-fluid">
+            <div id="row" class="row g-lg-3 g-2">
+                <div class="col-md-2 offset-md-3 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-1">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-2">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-3">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 g-0"></div>
+                <div class="col-md-2 offset-md-3 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-4">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-5">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-6">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 g-0"></div>
+                <div class="col-md-2 offset-md-3 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-7">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-8">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-4">
+                    <div class="card">
+                        <div class="card-img fill-trans color-delay-9">
+                            <svg viewBox="0 0 24 24"><use href="#square"></use></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <div id="footer"></div>
-  <!-- End Main -->
-  </main>
-  <!-- Run Scripts at the End, Otherwise Errors Abound! -->
-
-</body>
+    
+    <!-- Scripts -->
+    <script src="../js/datainclude.js"></script>
+    <script src="../js/colordelay.js"></script>
+    <script src="../js/toggler.js"></script>
+    </body>
 </html>
