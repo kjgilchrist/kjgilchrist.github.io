@@ -22,4 +22,4 @@ function setADelay() {
     delay9.style.animationDuration = Math.floor(Math.random() * 60 + 1) + 's';
 }
 
-setInterval(setADelay, 60000);
+//setInterval(setADelay, 60000);

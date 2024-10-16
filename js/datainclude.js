@@ -1,3 +1,5 @@
+// Deprecated feature using JQuery, causes synchronous request error.
+
 $(function () {
     var includes = $('[data-include]')
     $.each(includes, function () {

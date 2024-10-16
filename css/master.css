@@ -9,6 +9,51 @@
     --ex-variable: 10s;
 }
 
+/* Theme Inversions */
+.bg-body-inverted {
+    background-color: var(--bs-body-color) !important;
+}
+.text-body-inverted {
+    color: var(--bs-body-bg) !important;
+}
+.fill-inverted {
+    fill: var(--bs-body-bg);
+}
+
+/* General */
+.stroke {
+    stroke-width: 2;
+}
+.round {
+    stroke-linejoin: round;
+}
+.square {
+    fill: var(--bs-white);
+}
+.grayscale {
+    filter: grayscale(100%);
+}
+.view-height {
+    height: 100vh;
+}
+
+/* Headings and Titles */
+.section-title {
+    text-transform: uppercase;
+}
+.build-info {
+    font-size: smaller;
+}
+
+/* Sections */
+
+
+/* Scroll Spy */
+.scrollspy {
+    position: relative;
+    overflow: visible;
+}
+
 /* Nav Customs */
 .navbar {
     background-color: var(--bs-body-bg);
@@ -22,36 +67,138 @@
 
 /* Card Customs*/
 .card {
-    padding: 0.5rem;
+    width: 10rem;
+    height: 14rem;
+    overflow: hidden;
     border: 0;
+    align-items: center;
+    justify-content: center;
+    transition: filter 120ms ease;
 }
-.card-img {
-    padding: 0;
+.card:hover {
+    filter: drop-shadow(1px 1px 1px var(--bs-body-color));
+}
+.card:hover .card-shape {
+    animation: xFlip 180ms ease;
+    transform: scale(0);
+}
+.card:hover .card-body {
+    animation: xFlip 180ms ease;
+    transform: scale(0);
+}
+.card .hover-link {
+    width: 100%;
     height: 100%;
-    width: auto;
-    filter: drop-shadow(0px 2px 1px rgba(0,0,0,0.3));
+    position: absolute;
+    overflow: hidden;
+    z-index: 100;
 }
-.card-img svg {
-    transition: transform 1s ease 100ms;
+.card-body {
+    position: absolute;
+    width: 65%;
+    height: auto;
+    padding: 0;
+    color: var(--bs-light);
+    z-index: 2;
 }
-.card-img:hover {
-    animation-play-state: paused;
+.card-title, .card-subtitle, .card-text {
+    text-align: center;
 }
-.card-img svg:hover {
-    transform: scale(1.2) rotate(90deg);
+.card-title {
+    text-transform: uppercase;
+    font-size: small;
+}
+.card-subtitle {
+    font-size: smaller;
+}
+.card-text {
+    text-transform: lowercase;
+    font-size: x-small;
+}
+.card-shape {
+    position: absolute;
+    width: 100%;
+    fill: none;
+    backdrop-filter: blur(0.5rem);
+    transition: transform 100ms linear;
+    z-index: 1;
+}
+.card-img-overlay {
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+.card-pips {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    translate: 0 6rem;
+    list-style-type: none;
+    fill: var(--bs-light);
+}
+.disabled a {
+    pointer-events: none;
+}
+.disabled img {
+    filter: grayscale(100%);
 }
 
-/* New */
-.stroke {
-    stroke-width: 2;
-}
-.round {
-    stroke-linejoin: round;
-}
-.square {
-    height: 100px;
+/* Ribbons */
+.ribbon {
     width: 100px;
-    background-color: var(--bs-blue);
+    height: 20px;
+    line-height: 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    right: -15%;
+    top: 7%;
+    text-align: center;
+    transform: rotate(45deg);
+    color: var(--bs-text-black);
+  }
+.disabled .ribbon {
+    background-color: var(--bs-warning);
+}
+.disabled .ribbon::after {
+    content: "Updating";
+}
+.updated {
+    background-color: var(--bs-primary);
+}
+.updated::after {
+    content: "Updated";
+}
+.new {
+    background-color: var(--bs-success);
+}
+.new::after {
+    content: "New";
+}
+.leaving {
+    background-color: var(--bs-danger);
+}
+.leaving::after {
+    content: "Leaving";
+}
+
+/* Animations */
+@keyframes xFlip {
+    0% {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(0.75);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    75% {
+        transform: scale(0.25);
+    }
+    100% {
+        transform: scale(0.0);
+    }
 }
 .fill-trans {
     animation: fillColor 25s infinite;
@@ -59,23 +206,20 @@
     animation-timing-function: ease;
   }
   @keyframes fillColor {
-    16% {
+    20% {
         fill: var(--bs-red);
     }
-    33% {
+    40% {
         fill: var(--bs-yellow);
     }
-    50% {
+    60% {
         fill: var(--bs-green);
     }
-    66% {
+    80% {
         fill: var(--bs-blue);
     }
-    83% {
-        fill: var(--bs-light);
-    }
     100% {
-        fill: var(--bs-black);
+        fill: var(--bs-light);
     }
   }
   .color-delay-1 { animation-delay: -10s }
