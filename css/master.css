@@ -163,6 +163,12 @@
 .disabled .ribbon::after {
     content: "Updating";
 }
+.ongoing {
+    background-color: var(--bs-warning);
+}
+.ongoing::after {
+    content: "Ongoing";
+}
 .updated {
     background-color: var(--bs-primary);
 }
