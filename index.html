@@ -183,15 +183,16 @@
                 <section id="work"></section>
                 <!-- Temporary Banner -->
                 <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <strong>Forgive the mess!</strong> I am currently rebranding and updating my portfolio. Questions? Contact via email or LinkedIn.
+                    <strong>Oops! Some things on this page may not work properly.</strong> I am currently rebuilding and updating my portfolio. Feel free to contact via email or LinkedIn.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <!-- Work Grid -->
                 <section id="work-grid" class="container-fluid row">
-                    <div id="card-row" class="row row-cols-auto g-2">
+                    <div id="card-row" class="row row-cols-auto justify-content-center g-2">
+
                         <div id="portfolio" class="col">
-                            <div class="card m-auto disabled">
-                                <a class="hover-link" href="#"></a>
+                            <div class="card m-auto col disabled">
+                                <a class="hover-link btn" data-bs-toggle="collapse" href="#content-portfolio" role="button" aria-expanded="false" aria-controls="content-portfolio"></a>
                                 <img src="./img/cards/card-blank-blue.png" class="card-img-overlay" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Portfolio</h5>
@@ -212,9 +213,13 @@
                                 </ul>
                             </div>
                         </div>
+                        <div id="content-portfolio" class="collapse collapse-horizontal-sm card-content col-9">
+                            This is some content that should appear!
+                        </div>
+
                         <div id="2d-platformer" class="col">
-                            <div class="card m-auto disabled">
-                                <a class="hover-link" href="#"></a>
+                            <div class="card m-auto col disabled">
+                                <a class="hover-link btn" data-bs-toggle="collapse" href="#content-2d-platformer" role="button" aria-expanded="false" aria-controls="content-2d-platformer"></a>
                                 <img src="./img/cards/card-platformer.png" class="card-img-overlay" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Untitled Project</h5>
@@ -238,6 +243,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <div id="content-2d-platformer" class="collapse collapse-horizontal-sm card-content col">
+                            This is some content that should appear!
+                        </div>
+
                         <div id="3d-survivor" class="col">
                             <div class="card m-auto disabled">
                                 <a class="hover-link" href="#"></a>
@@ -295,8 +304,8 @@
                                 <a class="hover-link" href="#"></a>
                                 <img src="./img/cards/card-toaster.png" class="card-img-overlay" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Alternative Controllers</h5>
-                                    <h6 class="card-subtitle">Fabrication</h6>
+                                    <h5 class="card-title">Alternative Arcade</h5>
+                                    <h6 class="card-subtitle">Games + Fabrication</h6>
                                     <p class="card-text">2023</p>
                                 </div>
                                 <div class="card-shape">
@@ -447,8 +456,8 @@
                     <p class="build-info fw-lighter text-muted text-end">Built using Boostrap v5.3.3. Inspired by <a href="https://mypoorbrain.com/">mpb</a></p>
                 </div>
             </footer>
-            <script src="../js/colordelay.js"></script>
             <script src="../js/toggler.js"></script>
+            <script src="../js/collapse.js"></script>
         </main>
     </body>
 </html>

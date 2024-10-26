@@ -65,6 +65,11 @@
     border: 0;
 }
 
+/* Card Text Customs */
+.card-title {
+    font-size: large !important;
+}
+
 /* Card Customs*/
 .card {
     width: 10rem;
@@ -95,7 +100,7 @@
 }
 .card-body {
     position: absolute;
-    width: 65%;
+    width: 90%;
     height: auto;
     padding: 0;
     color: var(--bs-light);
@@ -139,6 +144,11 @@
 }
 .disabled a {
     pointer-events: none;
+}
+
+/* Card Content */
+.card-content {
+    width: 75%;
 }
 
 /* Ribbons */
