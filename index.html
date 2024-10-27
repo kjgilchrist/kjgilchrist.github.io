@@ -187,7 +187,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 <!-- Work Grid -->
-                <section id="card-grid" class="container-fluid row">
+                <section id="card-grid" class="container-fluid">
                     <div id="card-row" class="row row-cols-auto justify-content-center g-2">
                         <div id="portfolio" class="col">
                             <div class="card m-auto">
@@ -437,15 +437,20 @@
                         </div>
                     </div>
                 </section>
-                <section id="content" class="container">
-                    <div id="content-portfolio" class="container d-none">
-                        <a class="back-link btn btn-primary" href="#content-portfolio">Go Back</a>
-                        <div class="container card-content">
-                            This is the portfolio content.
+                <section id="content" class="container-fluid">
+                    <div id="content-portfolio" class="card-content row row-cols-auto d-none">
+                        <div class="content-header">
+                            <a class="back-link btn border" href="#content-portfolio">Go Back</a>
+                        </div>
+                        <div class="col">
+                            <p>This is the portfolio text content.</p>
                         </div>
                     </div>
                     <div id="content-2d-platformer" class="card-content col-12 d-none">
-                        This is the Platformer content.
+                        <a class="back-link btn btn-primary" href="#content-2d-platformer">Go Back</a>
+                        <div class="card-content row row-cols-auto">
+                            This is the platformer text content.
+                        </div>
                     </div>
                 </section>
                 <hr class="border border-1 opacity-50">
