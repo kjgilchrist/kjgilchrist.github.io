@@ -149,11 +149,20 @@
 /* Card Content */
 .content-header {
     width: 100%;
-    padding-bottom: 2rem;
-    border-bottom: solid;
+    padding-bottom: 1rem;
+}
+.content-text {
+    margin: 1rem 0;
+}
+.content-list {
+    
+}
+.content-carousel {
+    max-width: 600px;
 }
 .back-link {
-    
+    font-style: normal;
+    padding-bottom: 0.1rem;
 }
 .card-content {
     
