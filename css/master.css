@@ -148,24 +148,34 @@
 
 /* Card Content */
 .content-header {
-    width: 100%;
     padding-bottom: 1rem;
-}
-.content-text {
-    margin: 1rem 0;
-}
-.content-list {
-    
 }
 .content-carousel {
     max-width: 600px;
 }
+.content-list {
+    color: var(--bs-secondary);
+    fill: var(--bs-secondary);
+}
+.content-list ul {
+    padding: 0;
+}
+.content-list li {
+    padding: 0 0.25rem;
+    text-align: center;
+    list-style-type: none;
+    list-style-position: outside;
+}
+.content-list svg {
+    width: 20px;
+    height: 20px;
+}
+.content-text p {
+    margin: 0;
+}
 .back-link {
     font-style: normal;
     padding-bottom: 0.1rem;
-}
-.card-content {
-    
 }
 
 /* Ribbons */
